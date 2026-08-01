@@ -1,0 +1,53 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.npmjs.com/org/parafin
+description: >-
+  Parafin's first-party client libraries are published under the @parafin npm
+  scope (all MIT-licensed). They are framework bindings for the embeddable
+  Parafin Elements widget (the capital/spend/pay-over-time UX), plus the shared
+  embedded core. No first-party server-side SDKs (Python, Go, Ruby, Java, .NET)
+  or CLI were found on the public registries; server integrations call the REST
+  API directly with an OAuth bearer token (see authentication/).
+packages:
+  - language: javascript
+    registry: npm
+    name: "@parafin/core"
+    url: https://www.npmjs.com/package/@parafin/core
+    install: npm install @parafin/core
+    description: Parafin embedded core — shared widget runtime the framework bindings load.
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@parafin/react"
+    url: https://www.npmjs.com/package/@parafin/react
+    install: npm install @parafin/react
+    description: Parafin React widget / Elements bindings.
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@parafin/vue3"
+    url: https://www.npmjs.com/package/@parafin/vue3
+    install: npm install @parafin/vue3
+    description: Parafin Vue 3 widget bindings.
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@parafin/vue2"
+    url: https://www.npmjs.com/package/@parafin/vue2
+    install: npm install @parafin/vue2
+    description: Parafin Vue 2 widget bindings.
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@parafin/angular"
+    url: https://www.npmjs.com/package/@parafin/angular
+    install: npm install @parafin/angular
+    description: Parafin Angular widget bindings.
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@parafin/messaging-react"
+    url: https://www.npmjs.com/package/@parafin/messaging-react
+    install: npm install @parafin/messaging-react
+    description: React bindings for Parafin messaging (promotional/marketing surfaces).
+    official: true

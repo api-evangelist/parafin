@@ -1,0 +1,35 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.parafin.com/
+description: >-
+  Parafin Elements is Parafin's suite of embeddable, white-labeled client-side
+  UI components that render the merchant-facing financing experience (offers,
+  applications, dashboards, checkout) directly inside a platform's own app.
+  Distinct from server-side integration — these are drop-in widgets loaded via
+  the @parafin framework libraries and mounted with a short-lived bearer token
+  redeemed server-side. Parafin also offers Parafin Lite, a no-code hosted
+  option for platforms that want to test financing with little to no engineering.
+docs:
+  - https://docs.parafin.com/
+  - https://github.com/buildparafin/embedded-demo
+libraries:
+  - {name: "@parafin/core", purpose: Shared embedded widget runtime}
+  - {name: "@parafin/react", purpose: React bindings for Parafin Elements}
+  - {name: "@parafin/vue3", purpose: Vue 3 bindings for Parafin Elements}
+  - {name: "@parafin/vue2", purpose: Vue 2 bindings for Parafin Elements}
+  - {name: "@parafin/angular", purpose: Angular bindings for Parafin Elements}
+  - {name: "@parafin/messaging-react", purpose: React bindings for promotional messaging surfaces}
+families:
+  elements:
+    description: >-
+      Embedded, mountable widgets for the merchant financing experience,
+      initialized with a per-person, per-product short-lived bearer token.
+    components:
+      - {name: Capital widget, description: Presents capital offers and the cash-advance / flex-loan application flow embedded in the platform.}
+      - {name: Line of Credit widget, description: Line-of-credit application and management surface.}
+      - {name: Pay Over Time / Order Checkout widget, description: Installment pay-over-time selection and order checkout flow.}
+      - {name: Dashboard components, description: Merchant-facing servicing dashboard (balances, repayments, offers) rendered in-app.}
+  no_code:
+    description: Hosted, no-code option to launch financing with minimal engineering.
+    components:
+      - {name: Parafin Lite, description: No-code hosted financing surface for platforms evaluating embedded finance.}

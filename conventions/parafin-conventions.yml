@@ -1,0 +1,34 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.parafin.com/
+description: >-
+  Cross-cutting semantics for the Parafin embedded-finance REST API, captured
+  from the public embedded-demo and OAuth server metadata. The full reference is
+  login-gated, so pagination, idempotency, request-id tracing, and the error
+  envelope shape could not be verified and are marked unknown rather than
+  fabricated. Cross-links: authentication/parafin-authentication.yml.
+conventions:
+  base_url:
+    production: https://api.parafin.com
+    sandbox: https://api.dev.parafin.com
+  versioning:
+    scheme: uri-path
+    current: v1
+    evidence: endpoints observed under /v1/ (e.g. POST /v1/auth/redeem_token)
+  authentication:
+    style: oauth2-client-credentials
+    token: short-lived bearer via POST /v1/auth/redeem_token
+    header: "Authorization: Bearer <token>"
+    detail: authentication/parafin-authentication.yml
+  content_type: application/json
+  idempotency:
+    supported: unknown
+    note: not documented on the public surface; not verifiable behind the login-gated docs
+  pagination:
+    style: unknown
+    note: not verifiable behind the login-gated docs
+  request_tracing:
+    request_id_header: unknown
+  error_envelope:
+    shape: unknown
+    note: not verifiable behind the login-gated docs

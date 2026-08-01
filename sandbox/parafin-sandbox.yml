@@ -1,0 +1,25 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/buildparafin/embedded-demo
+docs: https://docs.parafin.com/
+description: >-
+  Parafin operates a dedicated sandbox/development environment separate from
+  production, reached at a distinct host. The public embedded-demo targets the
+  development host for testing the capital, line-of-credit, and order-checkout
+  flows before switching to production. Parafin Lite additionally lets platforms
+  evaluate the financing product with no engineering. No published magic test
+  card numbers, test bank accounts, or fixture triggers were found on the public
+  (login-gated) docs — those values are not reproduced here to avoid fabrication.
+environments:
+  - name: production
+    base_url: https://api.parafin.com
+  - name: sandbox
+    base_url: https://api.dev.parafin.com
+    aliases: [development, dev]
+    note: Distinct development host used by the public embedded-demo for testing flows.
+test_values:
+  note: >-
+    Parafin's published test identifiers/fixtures live behind the login-gated
+    docs and are not captured verbatim here (no fabrication). Sandbox businesses,
+    persons, bank accounts, and offers are created through the same API with
+    development credentials.

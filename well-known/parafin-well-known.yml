@@ -1,0 +1,26 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.parafin.com/.well-known/
+host: https://docs.parafin.com
+notes: >-
+  The docs host publishes an RFC 8414 OAuth Authorization Server metadata
+  document that powers Parafin's hosted documentation-search MCP server
+  (issuer https://docs.parafin.com/mcp/oauth, scope mcp:search). Most other
+  well-known paths and the docs body redirect (307) to a login gate. The API
+  host (api.parafin.com) exposes no well-known discovery documents.
+documents:
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: parafin-oauth-authorization-server.json
+    note: RFC 8414 metadata for the docs MCP OAuth server (mcp:search scope)
+  - path: /.well-known/openid-configuration
+    status: 307
+    note: redirects to /login
+  - path: /.well-known/security.txt
+    status: 307
+    note: redirects to /login
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /llms.txt
+    status: 307
+    note: redirects to /login

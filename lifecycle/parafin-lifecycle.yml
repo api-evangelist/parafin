@@ -1,0 +1,22 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.parafin.com/
+description: >-
+  Lifecycle posture for the Parafin API. Versioning is a URI-path scheme (v1).
+  No public status page, dated changelog, deprecation policy, or SLA was found
+  on Parafin's public surface (the developer docs are login-gated), so those
+  fields are recorded as not-found rather than fabricated. No canonical
+  StatusPage or Deprecation pointer is emitted because neither was verified.
+versioning:
+  scheme: uri-path
+  current: v1
+  docs: https://docs.parafin.com/
+deprecation:
+  policy_url: null
+  sunset_header: unknown
+  note: no public deprecation policy found
+sla:
+  url: null
+  uptime_target: null
+status_page: null
+changelog: null

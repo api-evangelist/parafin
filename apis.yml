@@ -1,8 +1,31 @@
 aid: parafin
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/parafin.png
 name: Parafin
-description: 'Parafin is a company surfaced as a portfolio company of ggv-capital, redpoint-ventures,
-  ribbit-capital and added to the API Evangelist network as a stub for enrichment. Sector: fintech. This
-  profile is a lead awaiting the enrichment pipeline.'
+description: >-
+  Parafin is an embedded finance infrastructure company (founded 2020) that lets
+  software platforms, marketplaces, and payment service providers offer capital,
+  spend, and pay-over-time products to the small businesses on their platform.
+  Parafin abstracts the hardest parts of launching a business-financing product —
+  capital sourcing, regulatory and compliance know-how, underwriting and risk
+  modeling, servicing, and collections — behind white-labeled REST APIs and
+  embeddable UI widgets (Parafin Elements) shipped for React, Vue, and Angular.
+  Products include Capital (revenue-based cash advances and flex term loans),
+  Line of Credit, Spend (card and cash account), and Pay Over Time. Platforms
+  integrate via a no-code option (Parafin Lite), low-code embedded Elements, or a
+  custom API build. Notable customers include DoorDash and Mindbody. Backed by
+  GGV Capital, Redpoint Ventures, and Ribbit Capital.
 url: https://raw.githubusercontent.com/api-evangelist/parafin/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,16 +37,83 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Fintech
-apis: []
+- Embedded Finance
+- Lending
+- Capital
+- Payments
+- Small Business
+- Working Capital
+- API
+apis:
+- name: Parafin API
+  description: >-
+    White-labeled embedded finance REST API for offering business financing —
+    creating businesses, persons, and bank accounts; generating capital offers;
+    creating capital, line-of-credit, and pay-over-time applications; and
+    orchestrating order checkout. OAuth client-credentials authentication with
+    short-lived bearer tokens redeemed via POST /v1/auth/redeem_token. Production
+    host api.parafin.com; sandbox host api.dev.parafin.com.
+  humanURL: https://docs.parafin.com/
+  baseURL: https://api.parafin.com
+  tags:
+  - Embedded Finance
+  - Lending
+  - Capital
+  properties:
+  - type: Documentation
+    url: https://docs.parafin.com/
+  - type: Authentication
+    url: authentication/parafin-authentication.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/parafin-domain-security.yml
 - type: Website
   url: https://www.parafin.com/
+- type: DeveloperPortal
+  url: https://docs.parafin.com/
+- type: Documentation
+  url: https://docs.parafin.com/
+- type: APIReference
+  url: https://docs.parafin.com/
+- type: Blog
+  url: https://www.parafin.com/blog
+- type: PrivacyPolicy
+  url: https://www.parafin.com/privacy-policy
+- type: GitHubOrganization
+  url: https://github.com/buildparafin
+- type: Support
+  url: https://www.parafin.com/contact
+- type: MCPServer
+  url: mcp/parafin-mcp.yml
+- type: Packages
+  url: packages/parafin-packages.yml
+- type: SDKs
+  url: packages/parafin-packages.yml
+- type: Components
+  url: components/parafin-components.yml
+- type: WellKnown
+  url: well-known/parafin-well-known.yml
+- type: Authentication
+  url: authentication/parafin-authentication.yml
+- type: Conventions
+  url: conventions/parafin-conventions.yml
+- type: Sandbox
+  url: sandbox/parafin-sandbox.yml
+- type: LLMsTxt
+  url: llms/parafin-llms.txt
+- type: Lifecycle
+  url: lifecycle/parafin-lifecycle.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 11
+  pass: local-v1
