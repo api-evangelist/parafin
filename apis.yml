@@ -47,6 +47,15 @@ tags:
 - Payments
 - Small Business
 - Working Capital
+tags_raw:
+- Company
+- Fintech
+- Embedded Finance
+- Lending
+- Capital
+- Payments
+- Small Business
+- Working Capital
 - API
 apis:
 - name: Parafin API
