@@ -64,6 +64,96 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Parafin is a company surfaced as a portfolio company of ggv-capital, redpoint-ventures, ribbit-capital and added to the API Evangelist network as a stub for enrichment. Sector: fintech. This profile is a lead awaiting the enrichment pipeline.
+Parafin is an embedded finance infrastructure company (founded 2020) that lets software platforms, marketplaces, and payment service providers offer capital, spend, and pay-over-time products to the small businesses on their platform. Parafin abstracts the hardest parts of launching a business-financing product — capital sourcing, regulatory and compliance know-how, underwriting and risk modeling, servicing, and collections — behind white-labeled REST APIs and embeddable UI widgets (Parafin Elements) shipped for React, Vue, and Angular. Products include Capital (revenue-based cash advances and flex term loans), Line of Credit, Spend (card and cash account), and Pay Over Time. Platforms integrate via a no-code option (Parafin Lite), low-code embedded Elements, or a custom API build. Notable customers include DoorDash and Mindbody. Backed by GGV Capital, Redpoint Ventures, and Ribbit Capital.
 
-Backed by: ggv-capital, redpoint-ventures, ribbit-capital — https://www.parafin.com/
+**Areas:** Company · Fintech · Embedded Finance · Lending · Capital · Payments · Small Business · Working Capital
+
+## Parafin on APIs.io
+
+Everything profiled for Parafin is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/parafin/](https://apis.io/providers/parafin/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Parafin API](https://apis.io/apis/parafin/parafin-api/) — White-labeled embedded finance REST API for offering business financing — creating businesses, persons, and bank accounts; generating capital offers;…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [parafin-docs](https://apis.io/servers/parafin/parafin-docs/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Parafin Authentication](https://apis.io/security/parafin/parafin-authentication/)
+- [Parafin Domain Security](https://apis.io/security/parafin/parafin-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.parafin.com/)
+- [Documentation](https://docs.parafin.com/)
+- [API reference](https://docs.parafin.com/)
+- [Support](https://www.parafin.com/contact)
+- [Blog](https://www.parafin.com/blog)
+- [Privacy policy](https://www.parafin.com/privacy-policy)
+- [GitHub](https://github.com/buildparafin)
+
+## API Evangelist rating
+
+**Kin Score 15.5** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 71.7 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 33.3 |
+| Access clarity | 10.5 |
+
+**Agent readiness 18.6** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | documented (partial credit) |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | yes |
+| Agentic Commerce | — |
+
+**Regulatory alignment 14.3** — Payments
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/parafin/](https://apis.io/providers/parafin/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Parafin: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/parafin/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
